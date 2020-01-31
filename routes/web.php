@@ -18,7 +18,14 @@ Route::get('/', function () { //original
 */
 //Route::get('/', 'PagesController@index');
 
-Route::get('/', function () { //original
-    return view('welcome');
+Route::get('/', function () {
+    $name = "Miki";
+    $age = "33";
+    return view('welcome', compact("name"), compact("age")); 
     //return "welcome to cars project";
 });
+
+Route::get('/about', function(){
+	return 'about us';
+});
+
