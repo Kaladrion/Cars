@@ -16,7 +16,8 @@ Route::get('/', function () { //original
     //return "welcome to cars project";
 });
 */
-Route::get('/', 'PagesControler@index');
+//Route::get('/', 'PagesController@index');
+
 Route::get('/', function () { //original
     return view('welcome');
     //return "welcome to cars project";
